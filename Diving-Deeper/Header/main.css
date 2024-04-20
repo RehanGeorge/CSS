@@ -96,6 +96,47 @@ body {
     outline: none;
 }
 
+#key-features {
+    background-color: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
+.key-features__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    padding: 0 16px;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.key-feature__description {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
 .main-header {
     background-color: #2ddf5c;
     padding: 8px 16px;
