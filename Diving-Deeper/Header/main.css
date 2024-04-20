@@ -75,6 +75,27 @@ body {
     margin: 8px 0;
 }
 
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus-visible {
+    outline: none;
+}
+
 .main-header {
     background-color: #2ddf5c;
     padding: 8px 16px;
@@ -126,10 +147,10 @@ body {
     list-style: none;
 }
 
-p::first-letter {
+/* p::first-letter {
     color: red;
     font-size: 20px;
-}
+} */
 
 .main-nav__item--cta a {
     color: white;
