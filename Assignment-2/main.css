@@ -1,0 +1,18 @@
+.main-box {
+    border: 1px dotted black;
+    width: 42%;
+    margin: 5px 5px 10px 20px;
+    text-align: center;
+    padding: 5px 10px 10px 15px;
+    height: 300px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.secondary-box {
+    visibility: unset;
+}
+
+div:last-of-type:hover {
+    background-color: lightblue;
+}
