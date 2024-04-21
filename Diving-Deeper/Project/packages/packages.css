@@ -1,0 +1,43 @@
+main {
+    padding-top: 32px;
+}
+
+.plan {
+    background-color: #a7ffd6;
+    width: 70%;
+    border: solid black;
+    border-left: 0px;
+    margin: 20px 0px;
+    padding: 16px;
+}
+
+.plan__link {
+    text-decoration: none;
+}
+
+.plan__title {
+    color: black;
+}
+
+.plan__tagline {
+    color: #8d8d8d;
+}
+
+.plan__description {
+    border: 1px solid black;
+    margin: 16px 16px 0px 0px;
+    background-color: white;
+    padding: 8px;
+}
+
+.plan--highlighted {
+    background-color: #19b84c;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan--highlighted .plan__tagline {
+    color: #666666;
+}
