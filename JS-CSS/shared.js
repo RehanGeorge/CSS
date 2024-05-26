@@ -13,3 +13,8 @@ selectPlanButton.forEach((button) => {
     backdrop.style.display = "block";
   });
 });
+
+modalNo.addEventListener("click", () => {
+  modal.style.display = "none";
+  backdrop.style.display = "none";
+});
