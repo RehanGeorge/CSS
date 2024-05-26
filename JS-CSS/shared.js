@@ -14,7 +14,10 @@ selectPlanButton.forEach((button) => {
   });
 });
 
-modalNo.addEventListener("click", () => {
+function closeModal() {
   modal.style.display = "none";
   backdrop.style.display = "none";
-});
+}
+
+modalNo.addEventListener("click", closeModal);
+backdrop.addEventListener("click", closeModal);
