@@ -11,23 +11,33 @@ const modalNo = document.querySelector(".modal button");
 // Show modal and backdrop
 selectPlanButton.forEach((button) => {
   button.addEventListener("click", () => {
-    modal.style.display = "block";
-    backdrop.style.display = "block";
+    // modal.style.display = "block";
+    // backdrop.style.display = "block";
+    modal.classList.add("open");
+    backdrop.classList.add("open");
   });
 });
 
 function closeModal() {
-  modal.style.display = "none";
-  backdrop.style.display = "none";
+  // modal.style.display = "none";
+  // backdrop.style.display = "none";
+  if (modal) {
+    modal.classList.remove("open");
+  }
+  backdrop.classList.remove("open");
 }
 
-modalNo.addEventListener("click", closeModal);
+if (modalNo) {
+  modalNo.addEventListener("click", closeModal);
+}
+
 backdrop.addEventListener("click", () => {
-  mobileNav.style.display = "none";
+  // mobileNav.style.display = "none";
+  mobileNav.classList.remove("open");
   closeModal();
 });
 
 toggleButton.addEventListener("click", () => {
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  mobileNav.classList.add("open");
+  backdrop.classList.add("open");
 });
