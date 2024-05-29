@@ -43,6 +43,12 @@ body {
   vertical-align: middle;
 }
 
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
+
 .toggle-button:focus {
   outline: none;
 }
@@ -60,7 +66,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  height: 1.5rem;
+  height: 2rem;
   /* width: 20px; */
   display: inline-block;
   vertical-align: middle;
@@ -74,7 +80,7 @@ body {
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 122px);
+  width: calc(100% - 44px);
   vertical-align: middle;
 }
 
@@ -82,6 +88,13 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (max-width: 40rem) {
+  .main-nav {
+    display: none;
+  }
+  
 }
 
 .main-nav__item {
@@ -134,8 +147,14 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem 0;
+}
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
 
 .main-footer__link a {
