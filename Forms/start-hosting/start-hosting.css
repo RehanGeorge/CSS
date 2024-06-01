@@ -29,6 +29,7 @@ main {
 .signup-form input[id*="terms"] + label {
     display: inline-block;
     width: auto;
+    vertical-align: middle;
 }
 
 .signup-form input:not([type="checkbox"]),
@@ -43,6 +44,29 @@ main {
     outline: none;
     background: #d8f3df;
     border-color: #2ddf5c;
+}
+
+.singup-form input[type="checkbox"] {
+    border: 1px solid #ccc;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    background: #2ddf5c;
+    border: #0e4f1f;
+    /* accent-color: red; */
+}
+
+/* .signup-form input.invalid,
+.signup-form select.invalid, */
+.signup-form input:invalid {
+    background-color: #faacac;
+    border-color: #ff5454 !important;
 }
 
 .signup-form button[type="submit"] {
