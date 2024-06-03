@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Allan";
+    src: url("allan-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Allan";
+    src: url("allan-Bold.ttf");
+    font-weight: bold;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -54,6 +65,9 @@ main {
     font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
+    font-family: Roboto;
+    font-weight: 900;
+    font-style: italic;
 }
 
 .clearfix {
