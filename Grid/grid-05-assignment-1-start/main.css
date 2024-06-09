@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    background: gray;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 400px 50px;
+}
+
+.container > * {
+    background: rgb(71, 71, 71);
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
