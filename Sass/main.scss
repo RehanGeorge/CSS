@@ -96,12 +96,11 @@ body {
     display: block;
     padding: $size-tiny;
     border: 0.05rem solid map-get($colors, main);
-  }
 
-    .documentation-link:hover,
-    .documentation-link:active {
-    color: white;
-    background: map-get($map: $colors, $key: secondary);
-    border-color: map-get($map: $colors, $key: secondary);
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($colors, secondary);
+      border-color: map-get($colors, secondary);}
   }
 }
